@@ -29,6 +29,12 @@ describe("validations tests suites - validateGamerTag", () => {
         expect(result).toBe(true);
     });
 
+    test("should return false as there are at least one special character", () => {
+        const result = validateGamerTag("Gamer.Fr");
+        expect(result).toBe(true);
+    });
+
+
 
 
     
