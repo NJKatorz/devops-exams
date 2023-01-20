@@ -43,7 +43,4 @@ describe("validations tests suites - validateGamerTag", () => {
         const result = validateGamerTag("");
         expect(result).toBe(false);
     });
-
-   
-    
 });
