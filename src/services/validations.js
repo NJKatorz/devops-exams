@@ -3,10 +3,10 @@ const isEmpty = (label) => !label || label.length === 0;
 
 function validateGamerTag(pseudo) {
 
-    const regResult = new RegExp("[A-Za-z.-/]{8,}");
-    if(regResult.test(pseudo))
+    const regResultCharacters = new RegExp("[A-Za-z0-9 .-:]{8,}");
+    
+    if(regResultCharacters.test(pseudo))
         return true;
-
     return false;
 };
 

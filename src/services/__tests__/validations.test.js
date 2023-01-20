@@ -24,17 +24,22 @@ describe("validations tests suites - validateGamerTag", () => {
         expect(result).toBe(false);
     });
 
-    test("should return false as there are at least 8 characters", () => {
+    test("should return true as there are at least 8 characters", () => {
         const result = validateGamerTag("TheGamer");
         expect(result).toBe(true);
     });
 
-    test("should return false as there are at least one special character", () => {
+    test("should return true as there are at least one special character", () => {
         const result = validateGamerTag("Gamer.Fr");
         expect(result).toBe(true);
     });
 
+    test("should return true as there are at least one number", () => {
+        const result = validateGamerTag("Gamer2Fr");
+        expect(result).toBe(true);
+    });
 
+   
 
 
     
