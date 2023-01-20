@@ -24,7 +24,10 @@ describe("validations tests suites - validateGamerTag", () => {
         expect(result).toBe(false);
     });
 
-    
+    test("should return false as there are at least 8 characters", () => {
+        const result = validateGamerTag("TheGamer");
+        expect(result).toBe(true);
+    });
 
 
 
