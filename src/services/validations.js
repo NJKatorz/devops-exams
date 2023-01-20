@@ -5,9 +5,7 @@ function validateGamerTag(pseudo) {
 
     const regResultCharacters = new RegExp("[A-Za-z0-9 .-:]{8,}");
     
-    if(regResultCharacters.test(pseudo))
-        return true;
-    return false;
+    return regResultCharacters.test(pseudo);
 };
 
 exports.isEmpty = isEmpty;
