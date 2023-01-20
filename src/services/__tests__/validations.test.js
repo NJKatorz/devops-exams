@@ -39,8 +39,11 @@ describe("validations tests suites - validateGamerTag", () => {
         expect(result).toBe(true);
     });
 
+    test("should return true as there are the field is empty", () => {
+        const result = validateGamerTag("");
+        expect(result).toBe(false);
+    });
+
    
-
-
     
 });
